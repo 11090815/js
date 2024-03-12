@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 1. var 可以先使用在声明，不会报错
+        console.log(age);
+        var age = 20
+
+        // 2. let 不可以先使用再声明，会报错
+        console.log(gender);
+        let gender = '男'
+
+        // 3. var 可以重复声明，不会报错
+        var zone = 'yh'
+        var zone = 'bh'
+
+        // 4. let 不可以重复声明变量，会报错
+        let zone1 = 'jk'
+        // 报错 Identifier 'zone1' has already been declared
+        // let zone1 = 'gx'
+
+        // let 用于弥补 var 的漏洞
+    </script>
+</body>
+</html>

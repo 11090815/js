@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 隐式转换
+        //  只要+号的左右两边有一个是字符串，就会做字符串拼接
+        //  只要减号、乘号、除号左右两边有一个是数字，就会做数字运算
+        console.log(11 + 11); // 22
+        console.log('11' + 11); // 1111
+        console.log(11 - 11); // 0
+        console.log('11' - 11); // 0
+        console.log(1 * 1); // 1
+        console.log('1' * 1); // 1
+        console.log(typeof '123'); // string
+        console.log(typeof +'123'); // number
+        console.log(+'11' + 11); // 22
+
+        // 显式转换
+        //  转数字：Number(变量)
+        let str = '123'
+        strN = Number(str)
+        console.log(strN + 1); // 124
+
+        // parseInt(变量)：提取整数
+        let xs = "12px"
+        xss = parseInt(xs)
+        console.log(xss); // 12
+
+        // parseFloat(变量)：保留小数1
+        let pi = "3.14t"
+        let pii = parseFloat(pi)
+        console.log(pii); // 3.14
+
+        // 转字符串：String(变量)
+        let age = 10
+        ageS = String(age)
+        console.log(ageS + '1'); // 101
+
+        // 案例
+        let num1 = +prompt("请输入一个数字：") // 前面加个加号，实现隐式类型转换
+        let num2 = +prompt("请输入一个数字：")
+        alert(num1 + num2)
+    </script>
+</body>
+
+</html>

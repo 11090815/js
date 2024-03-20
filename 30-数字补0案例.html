@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 利用三元运算符补0，为后期页面显示时间做铺垫
+        // 用户输入一个数，如果数字小于10，则前面进行补0，比如09、03
+        let num = prompt("请输入一个数字")
+        num = num < 10 ? 0 + num : num // 小于号在这里做了隐式类型转换
+        alert(num)
+    </script>
+</body>
+</html>

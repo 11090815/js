@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // switch 在匹配值的时候，用的是全等===，即判断类型和值是否都一样
+        
+        let choice = prompt("请输入选项")
+        switch (choice) {
+            case "0":
+                alert("你选了0")
+                break // 一定要加 break，不然后面的分支代码都会执行
+            case "1":
+                alert("你选了1")
+                break // 一定要加 break，不然后面的分支代码都会执行
+            default:
+                alert("你选错了，选的是" + choice)
+        }
+    </script>
+</body>
+
+</html>

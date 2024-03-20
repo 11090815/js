@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let user = prompt("请输入用户名")
+        // let passwd = prompt("请输入密码")
+        // if (user === "zhangsan" && passwd === "123456") {
+        //     alert("欢迎登录")
+        // } else {
+        //     alert("账户名或密码错误")
+        // }
+
+        let year = +prompt("请输入年份")
+        if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+            alert(year+"是闰年")
+        } else {
+            alert(year + "不是闰年")
+        }
+    </script>
+</body>
+</html>
